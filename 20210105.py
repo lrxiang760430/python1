@@ -82,7 +82,7 @@ def PrintTwice(content):
     print(content)
 
 PrintTwice("ChengDu")
-"""
+
 
 
 def PrintThreeTimes(content):
@@ -91,6 +91,14 @@ def PrintThreeTimes(content):
     print(content)
     
 PrintThreeTimes("Beijing")
+
+"""
+
+def ConnectPrintString(StringOne,StringTwo:
+    a=StringOne+StringTwo
+    print(a)
+
+Con
 
 
 
