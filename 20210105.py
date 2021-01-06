@@ -45,8 +45,54 @@ for i in Number[3:8]:
     c=c+i
     print (i)
 print (c)
-"""
+
 
 StudentHeight={"Tony":171,"Kevin":181,"Asum":185,"Alita":165}
 print(StudentHeight)
 print(StudentHeight["Alita"])
+
+
+
+Result = {'Tony':69, 'Lihua':64, 'Rain':93, 'Jack':61, 'Xiuxiu':82, 'Peiqi':67, 'Black':77}
+print(Result["Tony"])
+
+
+
+Result = {'Tony':69, 'Lihua':64, 'Rain':93, 'Jack':61, 'Xiuxiu':82, 'Peiqi':67, 'Black':77}
+print(Result.keys())
+
+
+Result = {'Tony':69, 'Lihua':64, 'Rain':93, 'Jack':61, 'Xiuxiu':82, 'Peiqi':67, 'Black':77}
+n=0
+for i in Result.keys():
+    if Result[i] <n:
+        continue
+    n=Result[i]
+print (n)
+
+
+def sentence(content,punctuation):
+    print(content,punctuation)
+
+sentence("这是函数","!")
+
+
+def PrintTwice(content):
+    print(content)
+    print(content)
+
+PrintTwice("ChengDu")
+"""
+
+
+def PrintThreeTimes(content):
+    print(content)
+    print(content)
+    print(content)
+    
+PrintThreeTimes("Beijing")
+
+
+
+
+
