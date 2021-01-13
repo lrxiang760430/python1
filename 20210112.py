@@ -12,10 +12,16 @@ print(data)
 #plt.plot(data["month"],data["sum"])
 #plt.plot(data["month"],data["sum"],color="skyblue")
 #plt.plot(data["month"],data["sum"],color="orange",marker="*")
+"""
 plt.plot(data["month"],data["sum"],color="orange",marker="o",label="每月总销量")
 plt.xlabel("月份")
 plt.ylabel("销量")
 plt.title("2019年8月至2020年7月书店每月销量走势")
 plt.legend()
-
+"""
+plt.bar(data["month"],data["sum"],width=0.5,color="red",label="每月总销量")
+plt.xlabel("月份")
+plt.ylabel("销量")
+plt.title("2019年8月至2020年7月书店每月销量走势")
+plt.legend()
 plt.show()
