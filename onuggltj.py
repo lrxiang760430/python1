@@ -1,0 +1,18 @@
+import pandas as pd
+onuggl=pd.read_csv(r'd:\tools\python\ONU设备巡检20181204A.csv',encoding="ANSI")
+#print(onuggl)
+#print(onuggl.head(5))
+#onuggl.info()
+#查看ONU接收OLT光功率为空值的项
+#print(onuggl[onuggl['ONU接收OLT光功率'].isnull()==True])
+#print(onuggl.dropna(axis=0,how='any'))
+#onuggl.drop(onuggl['ONU接收OLT光功率'].isnull()==True,axis=0)
+#onuggl.dropna()
+#print(onuggl.dropna())
+#onuggl.drop(onuggl['ONU接收OLT光功率']=='NaN')
+#onuggl.info()
+#onu1=onuggl.dropna(axis=0,how='any')
+#onu1=onuggl.drop(onuggl['ONU接收OLT光功率']=='NaN',axis=0)
+onu1=onuggl.dropna(subset=['ONU接收OLT光功率'])
+print(onu1)
+onu1.info()
