@@ -73,3 +73,17 @@ for i in Scores:
         Result.append('C')
 
 print(Result)
+
+StudentWeight={"tony":158,"kevin":141,"alita":101,"jessica":98}
+print(StudentWeight["tony"])
+print(StudentWeight["kevin"])
+print(StudentWeight["alita"])
+print(StudentWeight["jessica"])
+
+
+state={"China":"Beijing","USA":"Washington","Japan":"Tokyo","England":"NewYork"}
+
+state["England"]="London"
+
+state["Australia"]="Canberra"
+print(state)
