@@ -60,3 +60,18 @@ yen=lambda x:x/0.06052
 print(dollar(10000))
 print(pound(10000))
 print(yen(10000))
+
+
+shares={
+    'IBM':36.6,
+    'Lenovo':23.2,
+    'oldboy':21.2,
+    'ocean':10.2
+}
+
+m=max(shares.values())
+print(m)
+
+
+class Dog:
+    
