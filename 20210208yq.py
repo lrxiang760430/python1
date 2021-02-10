@@ -22,3 +22,24 @@ my_dog.sit()
 my_dog.roll_over()
 
 
+class Restaurant:
+
+    def __init__(self,restaurant_name,cuisine_type):
+        self.restaurant_name=restaurant_name
+        self.cuisine_type=cuisine_type
+
+    def describe_restaurant(self):
+        print(f"餐馆的名字是{self.restaurant_name}")
+        print(f"餐馆的主营菜系是{self.cuisine_type}")
+
+    def open_restaurant(self):
+        print("餐馆正在营业中")
+
+restaurant=Restaurant("全聚德","烤鸭")
+
+restaurant.describe_restaurant()
+restaurant.open_restaurant()
+
+number=[8,1,1,8,1,1,8]
+for i in number:
+    print(i * "*")
