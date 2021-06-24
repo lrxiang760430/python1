@@ -1,7 +1,9 @@
 import pandas as pd 
+import datetime
+starttime=datetime.datetime.now()
 #account=pd.read_csv(r'c:\tools\account20210622.txt')
 #account20210622
-account=pd.read_csv(r'c:\tools\78a.txt')
+account=pd.read_csv(r'G:\tools\logfile8\logfile20210622-0522\78a.txt')
 print(account)
 print(account.head())
 
@@ -36,7 +38,10 @@ account=account.dropna()
 print(account)
 
 #生成csv文件
-account.to_csv('c:/tools/202178a.csv')
+account.to_csv('g:/tools/202178a.csv')
+endtime=datetime.datetime.now()
+#print(endtime - starttime)
+print (endtime - starttime)
 
 
 '''
