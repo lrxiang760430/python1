@@ -26,6 +26,17 @@ print(ans)
 ans.to_csv('g:/tools/bossnoradius20210720.csv')
 
 
+x=account1
+y=account2
+print("x= ",x)
+print(y)
+#返回x中不包含y的部分
+ans = pd.merge(left=x, right=y, how='left', indicator=True)
+ans = ans.loc[ans._merge == 'left_only', :].drop(columns='_merge')
+
+print(ans)
+ans.to_csv('g:/tools/bossnoradius20210720a.csv')
+
 
 '''
 i1=0
