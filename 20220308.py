@@ -19,3 +19,19 @@ print(ip.startswith('10'))
 a='10'
 print(a.isdigit())
 print(vendor.isalpha())
+
+print('CCIE '*5)
+
+split_line="*"*50
+print(split_line)
+
+print('CCIE '+'HCIE')
+
+#counter_huawei=counter_huawei+1
+#counter_huawei += 1
+#print(counter_huawei)
+
+counter_huawei=0
+counter_huawei=counter_huawei+1
+counter_huawei+=1
+print(counter_huawei)
