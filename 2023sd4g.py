@@ -51,3 +51,5 @@ print('以上显示以经纬度去重后的数量')
 df=df.drop_duplicates('跟踪区码（TAC）')
 print(df)
 print('以上显示以跟踪区码（TAC）去重后的数量')
+
+print('只是为了学习git的操作')
