@@ -46,3 +46,7 @@ print('以上看看是否有合并后的经纬度了')
 df=df.drop_duplicates('经纬度')
 print(df)
 print('以上显示以经纬度去重后的数量')
+#根据TAC去重 跟踪区码（TAC）
+df=df.drop_duplicates('跟踪区码（TAC）')
+print(df)
+print('以上显示以跟踪区码（TAC）去重后的数量')
