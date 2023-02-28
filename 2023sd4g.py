@@ -60,4 +60,11 @@ print('以上显示以跟踪区码（TAC）去重后的数量')
 df5.to_csv('c:/tools/sd/20230227/以跟踪区码（TAC）去重.csv')
 
 
+#学习三合一的拼接方式
+#df['经纬度']=df['经度'].map(str)+' '+df['纬度'].map(str)
+df['三合一']=df['站号（E-NODEB ID）'].map(str)+' '+df['制式TDD/FDD'].map(str)+' '+df['工作频段（F/D/A/E/FDD1800/FDD900）'].map(str)
+df6=df.drop_duplicates('三合一')
+print(df6)
+print('以上显示的三合一去重后的结果')
+
 print('只是为了学习git的操作')
