@@ -28,9 +28,22 @@ print(df1)
 
 #print(df1a)
 #df2.reset_index().sort_values('math_score',ascending = False).set_index('school_name')
-df1a=df1.reset_index().sort_values('\t主叫IMPU\t',ascending=False).set_index('\t主叫IMPU\t')
+df1a=df1.reset_index().sort_values('\t被叫IMPU\t',ascending=False).set_index('\t被叫IMPU\t')
 print(df1a)
-df1a.to_csv('c:/tools/sd/1a.csv')
+df1a.to_csv('c:/tools/sd/1aa.csv')
+
+#下面是按照被叫号码排序
+df2=df.groupby(['\t被叫IMPU\t']).count()
+print('按照被叫号码分类汇总')
+print(df2)
+#df1.to_csv('c:/tools/sd/主叫impu.csv')
+#df1a=df1.sort_values()``
+
+#print(df1a)
+#df2.reset_index().sort_values('math_score',ascending = False).set_index('school_name')
+df2a=df2.reset_index().sort_values('\t被叫IMPU\t',ascending=False).set_index('\t被叫IMPU\t')
+print(df2a)
+df2a.to_csv('c:/tools/sd/2a.csv')
 
 '''
 #统计出现的次数
