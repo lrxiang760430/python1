@@ -12,3 +12,5 @@ df1=df.drop(df.head(6).index)
 #打印看一下效果
 print(df1)
 print(df1.columns)
+
+print('测试在vscode中上传到github的功能')
