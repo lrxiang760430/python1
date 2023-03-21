@@ -23,6 +23,18 @@ print(df["	主叫IMPU	"])
 print(df["	被叫IMPU	"])
 print(df["	位置信息小区号	"])
 
+#增加去掉四个不正常的项目的操作
+
+df=df[df["	Q850释放原因	"]!='\tNo answer from user (user alerted)\t']
+print(df)
+df=df[df["	Q850释放原因	"]!='\tNormal call clearing\t']
+print(df)
+df=df[df["	Q850释放原因	"]!='\tCall rejected\t']
+print(df)
+df=df[df["	Q850释放原因	"]!='\tUser busy\t']
+print(df)
+
+
 
 #学习打印出现的次数
 #vc = df['state'].value_counts()
@@ -31,15 +43,15 @@ print(df["	位置信息小区号	"])
 print('统计主叫号码出现的频次')
 zjimpu=df["	主叫IMPU	"].value_counts()
 print(zjimpu)
-zjimpu.to_csv('C:/tools/sd/chr/20230321/主叫号码排序.csv')
+zjimpu.to_csv('C:/tools/sd/chr/20230321/主叫号码排序1.csv')
 
 #print(type(zjimpu))
 print('统计被叫号码出现的频次')
 bjimpu=df["	被叫IMPU	"].value_counts()
 print(bjimpu)
-bjimpu.to_csv('C:/tools/sd/chr/20230321/被叫号码排序.csv')
+bjimpu.to_csv('C:/tools/sd/chr/20230321/被叫号码排序1.csv')
 
 print('统计位置信息小区号出现的频次')
 wzxxxqh=df["	位置信息小区号	"].value_counts()
 print(wzxxxqh)
-wzxxxqh.to_csv('C:/tools/sd/chr/20230321/位置信息小区号排序.csv')
+wzxxxqh.to_csv('C:/tools/sd/chr/20230321/位置信息小区号排序1.csv')
