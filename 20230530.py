@@ -6,6 +6,11 @@ import pandas as pd
 #gd=pd.read_excel(r'C:\tools\工单\网络类工单-0529.xlsx')
 gd=pd.read_excel(r'C:\tools\工单\5月工单.xlsx')
 print(gd)
+#以下这条命令取工单中的网络故障类
+gd=gd[(gd.需求描述.str.contains('移网业务/投诉类/网络'))]
+print(gd)
+
+'''
 print(gd['客户地市'])
 gd1=gd[(gd.客户地市.str.contains('济南'))]
 print(gd1)
@@ -55,3 +60,5 @@ gd15.to_excel(r'C:\tools\工单\20230530\菏泽.xlsx')
 gd16=gd[(gd.客户地市.str.contains('枣庄'))]
 print(gd16)
 gd16.to_excel(r'C:\tools\工单\20230530\枣庄.xlsx')
+'''
+
